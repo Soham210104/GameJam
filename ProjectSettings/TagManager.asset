@@ -6,6 +6,8 @@ TagManager:
   tags:
   - BoxDoor
   - ToyDoor
+  - Middle Room (L)
+  - Middle Room (R)
   layers:
   - Default
   - TransparentFX

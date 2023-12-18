@@ -10,6 +10,13 @@ TagManager:
   - Middle Room (R)
   - DoorLeft
   - DoorRight
+  - Trigger1
+  - Trigger2
+  - Trigger3
+  - Trigger4
+  - Machine1
+  - Machine2
+  - Machine3
   layers:
   - Default
   - TransparentFX

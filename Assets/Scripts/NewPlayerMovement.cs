@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class NewPlayerMovement : MonoBehaviour
 {
@@ -34,5 +35,17 @@ public class NewPlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+    }
+
+    void OnTriggerEnter2D(Collider2D c)
+    {
+        if(c.tag == "DoorLeft")
+        {
+            SceneManager.LoadScene(1);
+        }
+        if (c.tag == "DoorRight")
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 }

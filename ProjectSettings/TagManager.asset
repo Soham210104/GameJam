@@ -8,6 +8,8 @@ TagManager:
   - ToyDoor
   - Middle Room (L)
   - Middle Room (R)
+  - DoorLeft
+  - DoorRight
   layers:
   - Default
   - TransparentFX

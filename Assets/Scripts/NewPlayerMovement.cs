@@ -11,9 +11,6 @@ public class NewPlayerMovement : MonoBehaviour
     [Range(2,10)] [SerializeField] 
     private float speed = 3.8f;
     private Animator animator;
-    public GameObject machine1;
-    public GameObject machine2;
-    public GameObject machine3;
 
     public static NewPlayerMovement Instance;
 
@@ -24,9 +21,10 @@ public class NewPlayerMovement : MonoBehaviour
             Destroy(this.gameObject);
             return;
         }
-
+        
         Instance = this;
         GameObject.DontDestroyOnLoad(this.gameObject);
+
     }
 
     private void Awake()
@@ -55,44 +53,4 @@ public class NewPlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 
-    
-    //void OnTriggerEnter2D(Collider2D c)
-    //{
-    //    if(c.tag == "DoorLeft")
-    //    {
-    //        SceneManager.LoadScene(1);
-    //    }
-    //    if (c.tag == "DoorRight")
-    //    {
-    //        SceneManager.LoadScene(2);
-    //    }
-    //    if(c.tag == "Trigger1")
-    //    {
-    //        machine1.SetActive(true);
-    //    }
-    //    if (c.tag == "Trigger2")
-    //    {
-    //        machine2.SetActive(true);
-    //    }
-    //    if (c.tag == "Trigger3")
-    //    {
-    //        machine3.SetActive(true);
-    //    }
-    //}
-
-    //void OnTriggerExit2D(Collider2D c)
-    //{
-    //    if(c.tag == "Trigger1")
-    //    {
-    //        machine1.SetActive(false);
-    //    }
-    //    if (c.tag == "Trigger2")
-    //    {
-    //        machine2.SetActive(false);
-    //    }
-    //    if (c.tag == "Trigger3")
-    //    {
-    //        machine3.SetActive(false);
-    //    }
-    //}
 }

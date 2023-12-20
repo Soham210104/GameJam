@@ -63,7 +63,7 @@ public class Logic : MonoBehaviour
                 Debug.Log("slot2 Selected");
                 productCircle.SetActive(true);
                 productCircle.GetComponent<move>().moveM1toM2();
-                s = "Ci";
+                s = "Cy";
                 initSprite = "Ci";
                 f1 = false;
                 f2 = true;
@@ -73,7 +73,7 @@ public class Logic : MonoBehaviour
                 Debug.Log("slot3 Selected");
                 productCapsule.SetActive(true);
                 productCapsule.GetComponent<move>().moveM1toM2();
-                s = "Ca";
+                s = "Lo";
                 initSprite = "Ca";
                 f1 = false;
                 f2 = true;
@@ -84,7 +84,7 @@ public class Logic : MonoBehaviour
                 if (initSprite == "Sq") productSquare.GetComponent<move>().moveM2toM3();
                 else if (initSprite == "Ci") productCircle.GetComponent<move>().moveM2toM3();
                 else productCapsule.GetComponent<move>().moveM2toM3();
-                s += "11";
+                s += "Re";
                 f2 = false;
                 f3 = true;
                 break;
@@ -94,7 +94,7 @@ public class Logic : MonoBehaviour
                 if (initSprite == "Sq") productSquare.GetComponent<move>().moveM2toM3();
                 else if (initSprite == "Ci") productCircle.GetComponent<move>().moveM2toM3();
                 else productCapsule.GetComponent<move>().moveM2toM3();
-                s += "22";
+                s += "Gr";
                 f2 = false;
                 f3 = true;
                 break;
@@ -104,7 +104,7 @@ public class Logic : MonoBehaviour
                 if (initSprite == "Sq") productSquare.GetComponent<move>().moveM2toM3();
                 else if (initSprite == "Ci") productCircle.GetComponent<move>().moveM2toM3();
                 else productCapsule.GetComponent<move>().moveM2toM3();
-                s += "33";
+                s += "Bl";
                 f2 = false;
                 f3 = true;
                 break;
@@ -114,7 +114,7 @@ public class Logic : MonoBehaviour
                 if (initSprite == "Sq") productSquare.GetComponent<move>().moveM3toPickup();
                 else if (initSprite == "Ci") productCircle.GetComponent<move>().moveM3toPickup();
                 else productCapsule.GetComponent<move>().moveM3toPickup();
-                s += "XX";
+                s += "P2";
                 f3 = false;
                 productAtPickUp = true;
                 break;
@@ -124,7 +124,7 @@ public class Logic : MonoBehaviour
                 if (initSprite == "Sq") productSquare.GetComponent<move>().moveM3toPickup();
                 else if (initSprite == "Ci") productCircle.GetComponent<move>().moveM3toPickup();
                 else productCapsule.GetComponent<move>().moveM3toPickup();
-                s += "YY";
+                s += "P1";
                 f3 = false;
                 productAtPickUp = true;
                 break;
@@ -134,7 +134,7 @@ public class Logic : MonoBehaviour
                 if (initSprite == "Sq") productSquare.GetComponent<move>().moveM3toPickup();
                 else if (initSprite == "Ci") productCircle.GetComponent<move>().moveM3toPickup();
                 else productCapsule.GetComponent<move>().moveM3toPickup();
-                s += "ZZ";
+                s += "P3";
                 f3 = false;
                 productAtPickUp = true;
                 break;

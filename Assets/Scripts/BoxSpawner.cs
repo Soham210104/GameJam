@@ -16,7 +16,8 @@ public class BoxSpawner : MonoBehaviour
             int randomIndex = Random.Range(0, objects.Length);
 
             GameObject randomBox = Instantiate(objects[randomIndex], spawnPoint.position, Quaternion.identity);
-
+            string prefabName = randomBox.name;
+            Debug.Log("Selected prefab name: " + prefabName);
         }
         else
         {

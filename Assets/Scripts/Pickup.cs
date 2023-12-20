@@ -10,13 +10,13 @@ public class Pickup : MonoBehaviour
     {
         if(Logic.GetComponent<Logic>().productAtPickUp)
         {
+
             Logic.GetComponent<Logic>().f1 = true;
             if(Logic.GetComponent<Logic>().initSprite == "Sq") productSquare.GetComponent<move>().Follow(Logic.GetComponent<Logic>().s);
             else if(Logic.GetComponent<Logic>().initSprite == "Ci") productCircle.GetComponent<move>().Follow(Logic.GetComponent<Logic>().s);
             else productCapsule.GetComponent<move>().Follow(Logic.GetComponent<Logic>().s);
         }
         //if(collision.gameObject.CompareTag("Player"))
-
     }
     void OnCollisionExit2D(Collision2D collision)
     {

@@ -7,11 +7,17 @@ public class move : MonoBehaviour
 {
     public Vector2 m2pos,m3pos,pickupPos; // Replace with your desired coordinates
 
-    public Transform Player;
+    public GameObject PlayerG;
     bool flag = false;
     public float moveSpeed = 5f;
+    Transform Player;
     [SerializeField] private string identity;
 
+    void Start()
+    {
+        PlayerG = GameObject.Find("Player");
+        Player = PlayerG.GetComponent<Transform>();
+    }
     void Update()
     {
         if(flag)
@@ -59,7 +65,7 @@ public class move : MonoBehaviour
     {
         flag = true;
         identity = s;
-
+        transform.SetParent(PlayerG.transform);
         // This object should be child of Player
     }
 }

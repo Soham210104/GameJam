@@ -5,22 +5,22 @@ using UnityEngine;
 public class BoxSpawner : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject[] box;
+    public GameObject[] objects;
     public Transform spawnPoint;
 
     void Start()
     {
 
-        if (box.Length > 0)
+        if (objects.Length > 0)
         {
-            int randomIndex = Random.Range(0, box.Length);
+            int randomIndex = Random.Range(0, objects.Length);
 
-            GameObject randomBox = Instantiate(box[randomIndex], spawnPoint.position, Quaternion.identity);
+            GameObject randomBox = Instantiate(objects[randomIndex], spawnPoint.position, Quaternion.identity);
 
         }
         else
         {
-            Debug.LogError("No prefabs assigned to the 'box' array in the BoxSpawner script.");
+            Debug.LogError("No prefabs assigned to the  array in the BoxSpawner script.");
         }
     }
 

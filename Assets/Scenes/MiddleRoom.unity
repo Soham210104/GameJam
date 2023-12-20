@@ -754,79 +754,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &236538488
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 236538490}
-  - component: {fileID: 236538489}
-  m_Layer: 0
-  m_Name: ToySpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &236538489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236538488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73d1c2a61f5b0d14eb796f50184b8789, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  box:
-  - {fileID: 1854406582328499243, guid: 8bfe7c9601ac5254195554b88c030922, type: 3}
-  - {fileID: 1481365064498780554, guid: e173061971e225849a5810715cd2f264, type: 3}
-  - {fileID: 5064904445395373585, guid: 09d3bfbfd607f6d498b700a3d89b0ac8, type: 3}
-  - {fileID: 3157212384891954328, guid: 88b2fc0cfe181454aab7f3f19d61c4b2, type: 3}
-  - {fileID: 6609389309075367971, guid: a02d2529a7b64b047b2f8a8d73b243e0, type: 3}
-  - {fileID: 615777306379743610, guid: 19ae904f267ea1440b4ace840070daca, type: 3}
-  - {fileID: 3018484323999953302, guid: 91ff07fa7a3f0a94185ff2e347460ff0, type: 3}
-  - {fileID: 9046439790431716317, guid: 54d60fc9d29dfb3499642a2587c57df7, type: 3}
-  - {fileID: 5339754273947853758, guid: eaa282ca0aae9d4458f10d977f762a71, type: 3}
-  - {fileID: 2220446600163546707, guid: 60b473b668f6839458833181982f6348, type: 3}
-  - {fileID: 2375568959271750292, guid: 31fdec8a6c8239d42b10c5202a3e4577, type: 3}
-  - {fileID: 2080483292396987050, guid: 9dc80e2838ed70a4998060f69112e811, type: 3}
-  - {fileID: 7734767807678524295, guid: f4e341313e42d814f9f6c219f04763ac, type: 3}
-  - {fileID: 484162188048426776, guid: eefe75cbd386f334c92b554875ec06ae, type: 3}
-  - {fileID: 554506011890138476, guid: 72c23596769e2ac48b6dc9e6d5f5a66f, type: 3}
-  - {fileID: 3321032999423245640, guid: c61fbbba2d08250469acde25e6470a3c, type: 3}
-  - {fileID: 6698043494026520074, guid: cdb1251c54f93d447b7507347ff02bf8, type: 3}
-  - {fileID: 6134592860804487803, guid: 39a9861c379cf8f4a86923990c46ba11, type: 3}
-  - {fileID: 6990049656638676478, guid: 66b753b3bcb58a740a933f05aed9db3e, type: 3}
-  - {fileID: 5924915181542542248, guid: d6b197d43648bcc4e9643f48911f00e6, type: 3}
-  - {fileID: 1122412131477609160, guid: 26e747207b6cd714ebbaf0c3dd333669, type: 3}
-  - {fileID: 2919136272574100824, guid: d6ab1302444d70f43a7b64ff4707db95, type: 3}
-  - {fileID: 5263172699926060000, guid: 73191e603f7e52d458d31b184d3263fb, type: 3}
-  - {fileID: 3799745776103985452, guid: 1346ade7562412a4f9a7e1dd493fb543, type: 3}
-  - {fileID: 2633868858242865931, guid: e6ae4929c1183654bb6a0578d8fff874, type: 3}
-  - {fileID: 3823631609716337065, guid: a43b23d718f46c147a2b62991fc243ca, type: 3}
-  - {fileID: 8323989057928982414, guid: fb867fba7081db9408d87997055d3f64, type: 3}
-  spawnPoint: {fileID: 236538490}
---- !u!4 &236538490
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236538488}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.9, y: -2.68, z: -0.06685804}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &241102451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,7 +1188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73d1c2a61f5b0d14eb796f50184b8789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  box:
+  objects:
   - {fileID: 1854406582328499243, guid: 8bfe7c9601ac5254195554b88c030922, type: 3}
   - {fileID: 1481365064498780554, guid: e173061971e225849a5810715cd2f264, type: 3}
   - {fileID: 5064904445395373585, guid: 09d3bfbfd607f6d498b700a3d89b0ac8, type: 3}
@@ -5423,4 +5350,3 @@ SceneRoots:
   - {fileID: 1980125461}
   - {fileID: 1895887847}
   - {fileID: 762886923}
-  - {fileID: 236538490}

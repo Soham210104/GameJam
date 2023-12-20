@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Claims;
 using UnityEngine;
 
 public class move : MonoBehaviour
@@ -9,6 +10,7 @@ public class move : MonoBehaviour
     public Transform Player;
     bool flag = false;
     public float moveSpeed = 5f;
+    [SerializeField] private string identity;
 
     void Update()
     {
@@ -52,10 +54,12 @@ public class move : MonoBehaviour
         // Ensure the object reaches exactly at the target position
         transform.position = targetPos;
     }
-    public void Follow()
+
+    public void Follow(string s)
     {
         flag = true;
+        identity = s;
 
-
+        // This object should be child of Player
     }
 }

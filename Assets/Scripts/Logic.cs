@@ -42,12 +42,11 @@ public class Logic : MonoBehaviour
         var rayHit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue()));
         if (!rayHit.collider) return;
         var selectedOption = rayHit.collider.gameObject.name;
-        Debug.Log(rayHit.collider.gameObject.name);
         switch (selectedOption)
         {
-            case "Option1M1":
+            case "slot1":
                 if (!f1) break;
-                Debug.Log("Option1M1 Selected");
+                Debug.Log("slot1 Selected");
                 productSquare.SetActive(true);
                 productSquare.GetComponent<move>().moveM1toM2();
                 s = "Sq";
@@ -59,9 +58,9 @@ public class Logic : MonoBehaviour
                 f1 = false;
                 f2 = true;
                 break;
-            case "Option2M1":
+            case "slot2":
                 if (!f1) break;
-                Debug.Log("Option2M1 Selected");
+                Debug.Log("slot2 Selected");
                 productCircle.SetActive(true);
                 productCircle.GetComponent<move>().moveM1toM2();
                 s = "Ci";
@@ -69,9 +68,9 @@ public class Logic : MonoBehaviour
                 f1 = false;
                 f2 = true;
                 break;
-            case "Option3M1":
+            case "slot3":
                 if (!f1) break;
-                Debug.Log("Option3M1 Selected");
+                Debug.Log("slot3 Selected");
                 productCapsule.SetActive(true);
                 productCapsule.GetComponent<move>().moveM1toM2();
                 s = "Ca";
@@ -79,9 +78,9 @@ public class Logic : MonoBehaviour
                 f1 = false;
                 f2 = true;
                 break;
-            case "Option1M2":
+            case "slot4":
                 if (!f2) break;
-                Debug.Log("Option1M2 Selected");
+                Debug.Log("slot4 Selected");
                 if (initSprite == "Sq") productSquare.GetComponent<move>().moveM2toM3();
                 else if (initSprite == "Ci") productCircle.GetComponent<move>().moveM2toM3();
                 else productCapsule.GetComponent<move>().moveM2toM3();
@@ -89,9 +88,9 @@ public class Logic : MonoBehaviour
                 f2 = false;
                 f3 = true;
                 break;
-            case "Option2M2":
+            case "slot5":
                 if (!f2) break;
-                Debug.Log("Option2M2 Selected");
+                Debug.Log("slot5 Selected");
                 if (initSprite == "Sq") productSquare.GetComponent<move>().moveM2toM3();
                 else if (initSprite == "Ci") productCircle.GetComponent<move>().moveM2toM3();
                 else productCapsule.GetComponent<move>().moveM2toM3();
@@ -99,9 +98,9 @@ public class Logic : MonoBehaviour
                 f2 = false;
                 f3 = true;
                 break;
-            case "Option3M2":
+            case "slot6":
                 if (!f2) break;
-                Debug.Log("Option3M2 Selected");
+                Debug.Log("slot6 Selected");
                 if (initSprite == "Sq") productSquare.GetComponent<move>().moveM2toM3();
                 else if (initSprite == "Ci") productCircle.GetComponent<move>().moveM2toM3();
                 else productCapsule.GetComponent<move>().moveM2toM3();
@@ -109,9 +108,9 @@ public class Logic : MonoBehaviour
                 f2 = false;
                 f3 = true;
                 break;
-            case "Option1M3":
+            case "slot7":
                 if (!f3) break;
-                Debug.Log("Option1M3 Selected");
+                Debug.Log("slot7 Selected");
                 if (initSprite == "Sq") productSquare.GetComponent<move>().moveM3toPickup();
                 else if (initSprite == "Ci") productCircle.GetComponent<move>().moveM3toPickup();
                 else productCapsule.GetComponent<move>().moveM3toPickup();
@@ -119,9 +118,9 @@ public class Logic : MonoBehaviour
                 f3 = false;
                 productAtPickUp = true;
                 break;
-            case "Option2M3":
+            case "slot8":
                 if (!f3) break;
-                Debug.Log("Option2M3 Selected");
+                Debug.Log("slot8 Selected");
                 if (initSprite == "Sq") productSquare.GetComponent<move>().moveM3toPickup();
                 else if (initSprite == "Ci") productCircle.GetComponent<move>().moveM3toPickup();
                 else productCapsule.GetComponent<move>().moveM3toPickup();
@@ -129,9 +128,9 @@ public class Logic : MonoBehaviour
                 f3 = false;
                 productAtPickUp = true;
                 break;
-            case "Option3M3":
+            case "slot9":
                 if (!f3) break;
-                Debug.Log("Option3M3 Selected");
+                Debug.Log("slot9 Selected");
                 if (initSprite == "Sq") productSquare.GetComponent<move>().moveM3toPickup();
                 else if (initSprite == "Ci") productCircle.GetComponent<move>().moveM3toPickup();
                 else productCapsule.GetComponent<move>().moveM3toPickup();

@@ -2561,8 +2561,9 @@ MonoBehaviour:
   m2pos: {x: 13.95, y: 7.38}
   m3pos: {x: 8.97, y: 7.38}
   pickupPos: {x: 5.51, y: 7.38}
-  Player: {fileID: 4406906820535478446, guid: 3d6fc432710447245b13620be251b893, type: 3}
+  PlayerG: {fileID: 0}
   moveSpeed: 5
+  identity: 
 --- !u!1 &358991142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2955,8 +2956,9 @@ MonoBehaviour:
   m2pos: {x: 13.95, y: 7.38}
   m3pos: {x: 8.97, y: 7.38}
   pickupPos: {x: 5.51, y: 7.38}
-  Player: {fileID: 4406906820535478446, guid: 3d6fc432710447245b13620be251b893, type: 3}
+  PlayerG: {fileID: 0}
   moveSpeed: 5
+  identity: 
 --- !u!1 &631640989
 GameObject:
   m_ObjectHideFlags: 0
@@ -4359,6 +4361,7 @@ GameObject:
   - component: {fileID: 873869900}
   - component: {fileID: 873869899}
   - component: {fileID: 873869898}
+  - component: {fileID: 873869901}
   m_Layer: 0
   m_Name: Pickup
   m_TagString: Untagged
@@ -4453,6 +4456,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &873869901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873869897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64a45838008c8f54eaca335720dc37d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  productSquare: {fileID: 1630468916}
+  productCircle: {fileID: 622706931}
+  productCapsule: {fileID: 267292952}
+  Logic: {fileID: 1955311618}
 --- !u!1 &1008007626
 GameObject:
   m_ObjectHideFlags: 0
@@ -6578,8 +6597,9 @@ MonoBehaviour:
   m2pos: {x: 13.95, y: 7.38}
   m3pos: {x: 8.97, y: 7.38}
   pickupPos: {x: 5.51, y: 7.38}
-  Player: {fileID: 4406906820535478446, guid: 3d6fc432710447245b13620be251b893, type: 3}
+  PlayerG: {fileID: 0}
   moveSpeed: 5
+  identity: 
 --- !u!1 &1632943754
 GameObject:
   m_ObjectHideFlags: 0

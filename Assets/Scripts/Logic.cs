@@ -199,6 +199,7 @@ public class Logic : MonoBehaviour
                 Debug.Log("slot1 Selected");
                 product.SetActive(true);
                 rnd.sprite = spriteArray[0];
+                
                 product.GetComponent<move>().moveM1toM2();
                 s = "Sq";
                 initSprite = "Sq";
@@ -213,7 +214,7 @@ public class Logic : MonoBehaviour
                 if (!f1) break;
                 Debug.Log("slot2 Selected");
                 product.SetActive(true);
-                rnd.sprite = spriteArray[0];
+                rnd.sprite = spriteArray[1];
                 product.GetComponent<move>().moveM1toM2();
                 s = "Cy";
                 initSprite = "Ci";
@@ -224,17 +225,24 @@ public class Logic : MonoBehaviour
                 if (!f1) break;
                 Debug.Log("slot3 Selected");
                 product.SetActive(true);
-                rnd.sprite = spriteArray[0];
+                rnd.sprite = spriteArray[2];
                 product.GetComponent<move>().moveM1toM2();
                 s = "Lo";
                 initSprite = "Ca";
                 f1 = false;
                 f2 = true;
                 break;
+
+                
             case "slot4":
                 if (!f2) break;
                 Debug.Log("slot4 Selected");
-                rnd.sprite = spriteArray[0];
+                if(s == "Sq") 
+                rnd.sprite = spriteArray[3];
+                if (s == "Cy")
+                rnd.sprite = spriteArray[4];
+                if (s == "Lo")
+                rnd.sprite = spriteArray[5];
                 product.GetComponent<move>().moveM2toM3();
                 s += "Re";
                 f2 = false;
@@ -243,7 +251,13 @@ public class Logic : MonoBehaviour
             case "slot5":
                 if (!f2) break;
                 Debug.Log("slot5 Selected");
-                rnd.sprite = spriteArray[0];
+                if (s == "Sq")
+                    rnd.sprite = spriteArray[6];
+                if (s == "Cy")
+                    rnd.sprite = spriteArray[7];
+                if (s == "Lo")
+                    rnd.sprite = spriteArray[8];
+                //rnd.sprite = spriteArray[0];
                 product.GetComponent<move>().moveM2toM3();
                 s += "Gr";
                 f2 = false;
@@ -252,7 +266,13 @@ public class Logic : MonoBehaviour
             case "slot6":
                 if (!f2) break;
                 Debug.Log("slot6 Selected");
-                rnd.sprite = spriteArray[0];
+                if (s == "Sq")
+                    rnd.sprite = spriteArray[9];
+                if (s == "Cy")
+                    rnd.sprite = spriteArray[10];
+                if (s == "Lo")
+                    rnd.sprite = spriteArray[11];
+                //rnd.sprite = spriteArray[0];
                 product.GetComponent<move>().moveM2toM3();
                 s += "Bl";
                 f2 = false;
@@ -261,7 +281,24 @@ public class Logic : MonoBehaviour
             case "slot7":
                 if (!f3) break;
                 Debug.Log("slot7 Selected");
-                rnd.sprite = spriteArray[0];
+                if(s == "SqRe")
+                rnd.sprite = spriteArray[12];
+                if (s == "SqGr")
+                rnd.sprite = spriteArray[13];
+                if (s == "SqBl")
+                rnd.sprite = spriteArray[14];
+                if (s == "CyRe")
+                rnd.sprite = spriteArray[15];
+                if (s == "CyGr")
+                rnd.sprite = spriteArray[16];
+                if (s == "CyBl")
+                rnd.sprite = spriteArray[17];
+                if (s == "LoRe")
+                rnd.sprite = spriteArray[18];
+                if (s == "LoGr")
+                rnd.sprite = spriteArray[19];
+                if (s == "LoBl")  
+                rnd.sprite = spriteArray[20];
                 product.GetComponent<move>().moveM3toPickup();
                 s += "P2";
                 f3 = false;
@@ -271,7 +308,25 @@ public class Logic : MonoBehaviour
             case "slot8":
                 if (!f3) break;
                 Debug.Log("slot8 Selected");
-                rnd.sprite = spriteArray[0];
+                //rnd.sprite = spriteArray[0];
+                if (s == "SqRe") 
+                    rnd.sprite = spriteArray[21];
+                if (s == "SqGr")
+                    rnd.sprite = spriteArray[22];
+                if (s == "SqBl")
+                    rnd.sprite = spriteArray[23];
+                if (s == "CyRe")
+                    rnd.sprite = spriteArray[24];
+                if (s == "CyGr")
+                    rnd.sprite = spriteArray[25];
+                if (s == "CyBl")
+                    rnd.sprite = spriteArray[26];
+                if (s == "LoRe")
+                    rnd.sprite = spriteArray[27];
+                if (s == "LoGr")
+                    rnd.sprite = spriteArray[28];
+                if (s == "LoBl")
+                    rnd.sprite = spriteArray[29];
                 product.GetComponent<move>().moveM3toPickup();
                 s += "P1";
                 f3 = false;
@@ -281,7 +336,25 @@ public class Logic : MonoBehaviour
             case "slot9":
                 if (!f3) break;
                 Debug.Log("slot9 Selected");
-                rnd.sprite = spriteArray[0];
+                //rnd.sprite = spriteArray[0];
+                if (s == "SqRe")
+                    rnd.sprite = spriteArray[30];
+                if (s == "SqGr")
+                    rnd.sprite = spriteArray[31];
+                if (s == "SqBl")
+                    rnd.sprite = spriteArray[32];
+                if (s == "CyRe")
+                    rnd.sprite = spriteArray[33];
+                if (s == "CyGr")
+                    rnd.sprite = spriteArray[34];
+                if (s == "CyBl")
+                    rnd.sprite = spriteArray[35];
+                if (s == "LoRe")
+                    rnd.sprite = spriteArray[36];
+                if (s == "LoGr")
+                    rnd.sprite = spriteArray[37];
+                if (s == "LoBl")
+                    rnd.sprite = spriteArray[38];
                 product.GetComponent<move>().moveM3toPickup();
                 s += "P3";
                 f3 = false;
@@ -293,3 +366,7 @@ public class Logic : MonoBehaviour
     }
 }
 
+
+/*FIRST bOX SHAPE... SQUARE CYLINDER LONG(rec)
+    COLORS RED GREEN BLUE
+    RIBBON PATTERN CYAN RED YELLOW which we have written P1 P2 P3*/

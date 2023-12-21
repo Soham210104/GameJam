@@ -17,6 +17,7 @@ TagManager:
   - Machine1
   - Machine2
   - Machine3
+  - Product
   layers:
   - Default
   - TransparentFX

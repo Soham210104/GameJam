@@ -10,9 +10,9 @@ public class move : MonoBehaviour
     bool flag = false;
     public float moveSpeed = 5f;
     private SpriteRenderer rnd;
-    Transform Player;
-    [SerializeField] private string identity;
-    [SerializeField] private Sprite[] spriteArrays;
+    public Transform Player;
+    public string identity;
+    //public Sprite[] spriteArrays;
     void Start()
     {
         PlayerG = GameObject.Find("Player");
@@ -25,7 +25,7 @@ public class move : MonoBehaviour
         {
             Vector3 newPosition = Vector3.Lerp(transform.position, Player.position,  50f*Time.deltaTime);
             transform.position = new Vector3(newPosition.x , newPosition.y+ 0.1f, transform.position.z);
-
+            /*
             switch (identity) 
             {
                 case "CyBlP1":
@@ -110,7 +110,7 @@ public class move : MonoBehaviour
                     rnd.sprite = spriteArrays[26];
                     break;
             }
-              
+             */ 
                 
         }
     }
@@ -145,7 +145,7 @@ public class move : MonoBehaviour
         // Ensure the object reaches exactly at the target position
         transform.position = targetPos;
     }
-
+   
     public void Follow(string s)
     {
         flag = true;
@@ -157,11 +157,16 @@ public class move : MonoBehaviour
     public void dropBox()
     {
         flag = false;
-        transform.position = new Vector2(-0.23f, -3.45f);
+        transform.position = new Vector2(-0.45f, -3.6f);
+        transform.SetParent(null);
     }
     public void dropToy()
     {
         flag = false;
-        transform.position = new Vector2(1.15f, -3.45f);
+        transform.position = new Vector2(1.52f, -3.6f);
     }
 }
+
+
+
+

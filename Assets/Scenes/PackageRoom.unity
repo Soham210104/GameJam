@@ -4225,7 +4225,46 @@ MonoBehaviour:
   f2: 0
   f3: 0
   productAtPickUp: 0
-  spriteArray: []
+  spriteArray:
+  - {fileID: 21300000, guid: fdda0078d7e754c45b1b687373eff140, type: 3}
+  - {fileID: 21300000, guid: e827f16e78175734eaab612d79d49203, type: 3}
+  - {fileID: 21300000, guid: a4503354356c12b43aba0d82bdca9490, type: 3}
+  - {fileID: 21300000, guid: 5fecd804b9db46e4b9e731043ea7cb3a, type: 3}
+  - {fileID: 21300000, guid: 64bf70027cb4d4644ad737cbce167c28, type: 3}
+  - {fileID: 21300000, guid: d5e00c4dc0bb92041b7f60f6fcc0d38d, type: 3}
+  - {fileID: 21300000, guid: 85d70bd1f288a3f499503cd28c59f8da, type: 3}
+  - {fileID: 21300000, guid: 5574a39d2d36f9f40a21602d0793abcf, type: 3}
+  - {fileID: 21300000, guid: 6db340d392f56774ab3066313eada75f, type: 3}
+  - {fileID: 21300000, guid: 67fbb972eaa5984459e23d668b1ecb55, type: 3}
+  - {fileID: 21300000, guid: d86eab612edcf6140b7167d6ac72ceb7, type: 3}
+  - {fileID: 21300000, guid: 22025381fd404a542890a1829e821f09, type: 3}
+  - {fileID: 21300000, guid: 2705d1f79a8e1694a94ca3d103b24b74, type: 3}
+  - {fileID: 21300000, guid: 67ae04a77c4b5954c9427c0aa28b7575, type: 3}
+  - {fileID: 21300000, guid: 2f6a46c1ed853c0499c91ead86b954bb, type: 3}
+  - {fileID: 21300000, guid: 6292af79fc1c7c44983624c5b615d0e7, type: 3}
+  - {fileID: 21300000, guid: bdcd13e64f9473e4397e774ca83cf6be, type: 3}
+  - {fileID: 21300000, guid: ed56aaaeaa380454ca42bc990f8dc7a1, type: 3}
+  - {fileID: 21300000, guid: b58c6e64036905e4082d49bab4faeb42, type: 3}
+  - {fileID: 21300000, guid: 9e43597d7b327b34790d36a554dea177, type: 3}
+  - {fileID: 21300000, guid: 512484a0983742a4fb6cc37278303d97, type: 3}
+  - {fileID: 21300000, guid: 78d1c9ab581fc974ba497eb04a30241b, type: 3}
+  - {fileID: 21300000, guid: 22dc5faeed0c40448bf3630eb43d3254, type: 3}
+  - {fileID: 21300000, guid: e93608f97f540bb4a98fe7f73c45668a, type: 3}
+  - {fileID: 21300000, guid: 20e0c4b36276c1f41b7221f7b4c53b9b, type: 3}
+  - {fileID: 21300000, guid: 56e5641ba32bbad47928356e84c117ee, type: 3}
+  - {fileID: 21300000, guid: 754d77d7c3704eb47b7df0c4cd3e6fbd, type: 3}
+  - {fileID: 21300000, guid: 37f06f44d284f144d8120855763cc14e, type: 3}
+  - {fileID: 21300000, guid: 6c1db0b209ac82c48b7ab4b30f6005af, type: 3}
+  - {fileID: 21300000, guid: 6557dcb998cc6954e9808929553f3d95, type: 3}
+  - {fileID: 21300000, guid: dad6589b64a003343a2c8d0fe6a0822f, type: 3}
+  - {fileID: 21300000, guid: 2201a1d2e464e9645b324c8a68b4b7e2, type: 3}
+  - {fileID: 21300000, guid: 0cf65b71cd2bf1a45922e9ca016932bb, type: 3}
+  - {fileID: 21300000, guid: dad6589b64a003343a2c8d0fe6a0822f, type: 3}
+  - {fileID: 21300000, guid: 31f75739fc699e840b5cc0d027550ff0, type: 3}
+  - {fileID: 21300000, guid: 6b079f7c523adc34b846880df77bbb94, type: 3}
+  - {fileID: 21300000, guid: 340038896a5af2c4bbd04effdb891f8f, type: 3}
+  - {fileID: 21300000, guid: 4d1ee35ea7a41e544919bb3dea7d5f62, type: 3}
+  - {fileID: 21300000, guid: d9dbb5832d175e44b9b8891d0319f259, type: 3}
 --- !u!114 &789882883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5235,7 +5274,7 @@ GameObject:
   - component: {fileID: 1244464709}
   m_Layer: 0
   m_Name: Product
-  m_TagString: Untagged
+  m_TagString: Product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5257,35 +5296,8 @@ MonoBehaviour:
   pickupPos: {x: -4.05, y: 6.29}
   PlayerG: {fileID: 0}
   moveSpeed: 5
+  Player: {fileID: 0}
   identity: 
-  spriteArrays:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!212 &1244464710
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7141,7 +7153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64a45838008c8f54eaca335720dc37d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  product: {fileID: 0}
+  product: {fileID: 1244464708}
   Logic: {fileID: 789882881}
 --- !u!4 &1816038947
 Transform:

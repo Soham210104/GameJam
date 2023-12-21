@@ -4581,8 +4581,37 @@ MonoBehaviour:
   m2pos: {x: -11.6, y: 6.29}
   m3pos: {x: -6.48, y: 6.29}
   pickupPos: {x: -4.05, y: 6.29}
-  Player: {fileID: 4406906820535478446, guid: 3d6fc432710447245b13620be251b893, type: 3}
+  PlayerG: {fileID: 0}
   moveSpeed: 5
+  identity: 
+  spriteArrays:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!212 &927110786
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4834,8 +4863,37 @@ MonoBehaviour:
   m2pos: {x: -11.6, y: 6.29}
   m3pos: {x: -6.48, y: 6.29}
   pickupPos: {x: -4.05, y: 6.29}
-  Player: {fileID: 4406906820535478446, guid: 3d6fc432710447245b13620be251b893, type: 3}
+  PlayerG: {fileID: 0}
   moveSpeed: 5
+  identity: 
+  spriteArrays:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1038935579
 GameObject:
   m_ObjectHideFlags: 0
@@ -5460,8 +5518,37 @@ MonoBehaviour:
   m2pos: {x: -11.6, y: 6.29}
   m3pos: {x: -6.48, y: 6.29}
   pickupPos: {x: -4.05, y: 6.29}
-  Player: {fileID: 4406906820535478446, guid: 3d6fc432710447245b13620be251b893, type: 3}
+  PlayerG: {fileID: 0}
   moveSpeed: 5
+  identity: 
+  spriteArrays:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!212 &1244464710
 SpriteRenderer:
   m_ObjectHideFlags: 0

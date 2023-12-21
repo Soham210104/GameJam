@@ -7,7 +7,7 @@ public class BoxSpawner : MonoBehaviour
     // Start is called before the first frame update
     public GameObject[] objects;
     public Transform spawnPoint;
-
+    public string prefabName;
     void Start()
     {
 
@@ -16,7 +16,7 @@ public class BoxSpawner : MonoBehaviour
             int randomIndex = Random.Range(0, objects.Length);
 
             GameObject randomBox = Instantiate(objects[randomIndex], spawnPoint.position, Quaternion.identity);
-            string prefabName = randomBox.name;
+            prefabName = randomBox.name;
             Debug.Log("Selected prefab name: " + prefabName);
         }
         else

@@ -12,12 +12,16 @@ public class move : MonoBehaviour
     private SpriteRenderer rnd;
     public Transform Player;
     public string identity;
+    public string goalBox, goalToy;
+    public GameObject BoxSpawner, ToySpawner;
+    public GameObject respawning;
     //public Sprite[] spriteArrays;
     void Start()
     {
         PlayerG = GameObject.Find("Player");
         Player = PlayerG.GetComponent<Transform>();
         rnd = GetComponent<SpriteRenderer>();
+        goalBox = BoxSpawner.GetComponent<BoxSpawner>().prefabName;
     }
     void Update()
     {
@@ -151,6 +155,7 @@ public class move : MonoBehaviour
         flag = true;
         identity = s;
         transform.SetParent(PlayerG.transform);
+        GameObject newSpawned = Instantiate(respawning);
         // This object should be child of Player
     }
 
@@ -159,6 +164,8 @@ public class move : MonoBehaviour
         flag = false;
         transform.position = new Vector2(-0.45f, -3.6f);
         transform.SetParent(null);
+        if (identity == goalBox) Debug.Log("Correct!");
+        else Debug.Log("Wrong");
     }
     public void dropToy()
     {
@@ -166,7 +173,3 @@ public class move : MonoBehaviour
         transform.position = new Vector2(1.52f, -3.6f);
     }
 }
-
-
-
-

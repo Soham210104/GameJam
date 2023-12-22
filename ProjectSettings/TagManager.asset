@@ -17,6 +17,9 @@ TagManager:
   - Product
   - ProductToy
   - Drop
+  - Box
+  - BoxSpawner
+  - ToySpawner
   layers:
   - Default
   - TransparentFX

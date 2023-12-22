@@ -12,6 +12,7 @@ public class NewPlayerMovement : MonoBehaviour
     private float speed = 3.8f;
     private Animator animator;
 
+    [SerializeField] private SceneInfo sceneInfo;
     public static NewPlayerMovement Instance;
 
     private void Start()
@@ -53,4 +54,8 @@ public class NewPlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 
+    public SceneInfo GetSceneInfo()
+    {
+        return sceneInfo;
+    }
 }

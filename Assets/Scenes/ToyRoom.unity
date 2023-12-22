@@ -4803,6 +4803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeToSceneName: MiddleRoom
+  sceneInfo: {fileID: 11400000, guid: 3fe1aac6f8722f34fbe0f9a2366cd150, type: 2}
 --- !u!1 &1138855601
 GameObject:
   m_ObjectHideFlags: 0

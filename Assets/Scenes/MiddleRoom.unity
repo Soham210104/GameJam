@@ -4371,6 +4371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeToSceneName: PackageRoom
+  sceneInfo: {fileID: 11400000, guid: 3fe1aac6f8722f34fbe0f9a2366cd150, type: 2}
 --- !u!1 &1827414246
 GameObject:
   m_ObjectHideFlags: 0
@@ -5428,6 +5429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeToSceneName: ToyRoom
+  sceneInfo: {fileID: 11400000, guid: 3fe1aac6f8722f34fbe0f9a2366cd150, type: 2}
 --- !u!1001 &4938480296839595827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5436,6 +5438,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 516143982297621381, guid: 3d6fc432710447245b13620be251b893, type: 3}
+      propertyPath: sceneInfo
+      value: 
+      objectReference: {fileID: 11400000, guid: 3fe1aac6f8722f34fbe0f9a2366cd150, type: 2}
     - target: {fileID: 2860112161893038204, guid: 3d6fc432710447245b13620be251b893, type: 3}
       propertyPath: m_SortingOrder
       value: 10

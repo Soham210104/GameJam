@@ -4469,7 +4469,7 @@ GameObject:
   - component: {fileID: 873869900}
   - component: {fileID: 873869899}
   - component: {fileID: 873869898}
-  - component: {fileID: 873869901}
+  - component: {fileID: 873869902}
   m_Layer: 0
   m_Name: Pickup
   m_TagString: Untagged
@@ -4564,7 +4564,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &873869901
+--- !u!114 &873869902
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4573,7 +4573,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 873869897}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64a45838008c8f54eaca335720dc37d9, type: 3}
+  m_Script: {fileID: 11500000, guid: 48f6f0491c832f54f983754cb1161c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   product: {fileID: 1630468916}
@@ -9190,6 +9190,14 @@ PrefabInstance:
     - target: {fileID: 5555329044465459312, guid: df54d177da9f4634fa83e99c62b1a7c6, type: 3}
       propertyPath: m_Name
       value: Product
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555329044465459312, guid: df54d177da9f4634fa83e99c62b1a7c6, type: 3}
+      propertyPath: m_TagString
+      value: ProductToy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5860061402760638774, guid: df54d177da9f4634fa83e99c62b1a7c6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7097431980777089465, guid: df54d177da9f4634fa83e99c62b1a7c6, type: 3}
       propertyPath: m_LocalPosition.x

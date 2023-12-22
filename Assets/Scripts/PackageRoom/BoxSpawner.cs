@@ -10,7 +10,6 @@ public class BoxSpawner : MonoBehaviour
     public string prefabName;
     void Start()
     {
-
         if (objects.Length > 0)
         {
             int randomIndex = Random.Range(0, objects.Length);

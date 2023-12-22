@@ -14,10 +14,9 @@ TagManager:
   - Trigger2
   - Trigger3
   - Trigger4
-  - Machine1
-  - Machine2
-  - Machine3
   - Product
+  - ProductToy
+  - Drop
   layers:
   - Default
   - TransparentFX

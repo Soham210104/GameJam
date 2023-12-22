@@ -4201,7 +4201,7 @@ GameObject:
   - component: {fileID: 1616670539}
   m_Layer: 0
   m_Name: DropTrigger
-  m_TagString: Untagged
+  m_TagString: Drop
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4279,7 +4279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Product: {fileID: 0}
-  childTransform: {fileID: 0}
+  ProductToy: {fileID: 0}
 --- !u!1 &1676479926
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,14 +5,12 @@ using UnityEngine;
 public class drop : MonoBehaviour
 {
     public GameObject Product;
-    GameObject childObject;
-    public Transform childTransform;
+    public GameObject ProductToy;
     // Start is called before the first frame update
     void Start()
     {
         Product = GameObject.FindWithTag("Product");
-        childObject = Product;
-        //childTransform = Product.GetComponent<Transform>();
+        ProductToy = GameObject.FindWithTag("ProductToy");
     }
 
     // Update is called once per frame
@@ -23,11 +21,13 @@ public class drop : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        //childObject.transform.parent = null; //childObject ko hi null karege
-        //Product.transform = new Vector2(1.52f,-3.6f); 
-        //childObject.transform.position = new Vector2(1.52f, -3.6f); //child ko hi toh detach karke change karvana hai
-
-        Product.GetComponent<move>().dropBox();
+        if (Product != null)
+        {
+            Product.GetComponent<move>().dropBox();
+        }
+        else if(ProductToy != null)
+        {
+            ProductToy.GetComponent<move>().dropToy();
+        }
     }
-
 }

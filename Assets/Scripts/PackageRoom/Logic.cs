@@ -303,7 +303,7 @@ public class Logic : MonoBehaviour
                 s += "P2";
                 f3 = false;
                 productAtPickUp = true;
-                f1 = true;
+                //f1 = true;
                 break;
             case "slot8":
                 if (!f3) break;
@@ -331,7 +331,7 @@ public class Logic : MonoBehaviour
                 s += "P1";
                 f3 = false;
                 productAtPickUp = true;
-                f1 = true;
+                //f1 = true;
                 break;
             case "slot9":
                 if (!f3) break;
@@ -359,7 +359,7 @@ public class Logic : MonoBehaviour
                 s += "P3";
                 f3 = false;
                 productAtPickUp = true;
-                f1 = true;
+                //f1 = true;
                 break;
 
         }

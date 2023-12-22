@@ -154,7 +154,7 @@ public class ToyLogic : MonoBehaviour
                 s += "Be";
                 f3 = false;
                 productAtPickUp = true;
-                f1 = true;
+                //f1 = true;
                 break;
             case "slot8":
                 if (!f3) break;
@@ -182,7 +182,7 @@ public class ToyLogic : MonoBehaviour
                 s += "Cl";
                 f3 = false;
                 productAtPickUp = true;
-                f1 = true;
+                //f1 = true;
                 break;
             case "slot9":
                 if (!f3) break;
@@ -210,7 +210,7 @@ public class ToyLogic : MonoBehaviour
                 s += "He";
                 f3 = false;
                 productAtPickUp = true;
-                f1 = true;
+                //f1 = true;
                 break;
 
         }

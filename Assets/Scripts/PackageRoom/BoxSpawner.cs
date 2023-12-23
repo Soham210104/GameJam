@@ -14,6 +14,9 @@ public class BoxSpawner : MonoBehaviour
     public Test test;
     public ToySpawner t;
     public move m;
+
+    private AudioManager audioManager;
+
     void Start()
     {
         /*
@@ -24,6 +27,8 @@ public class BoxSpawner : MonoBehaviour
         m = GameObject.FindWithTag("Product").GetComponent<move>();
         identity = m.identity;
         test = GameObject.FindWithTag("Test").GetComponent<Test>();
+
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     void Update()
@@ -77,12 +82,16 @@ public class BoxSpawner : MonoBehaviour
                     t.SpawnerToy();
                     test.boxCorrect = false;
                     test.toyCorrect = false;
+
+                    audioManager.PlaySFX(audioManager.success);
+
                     test.score++;
                     //test.scoreText.text = test.score.ToString();
                 }
             }
             else
             {
+                audioManager.PlaySFX(audioManager.failure);
                 Debug.Log("B");
                 Destroy(m.gameObject);
             }

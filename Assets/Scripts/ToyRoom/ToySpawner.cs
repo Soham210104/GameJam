@@ -12,6 +12,9 @@ public class ToySpawner : MonoBehaviour
     public BoxSpawner b;
     public move m;
     public Test test;
+
+    private AudioManager audioManager;
+
     //private static bool spawned = false;
     // Start is called before the first frame update
     void Start()
@@ -30,6 +33,7 @@ public class ToySpawner : MonoBehaviour
         m = GameObject.FindWithTag("ProductToy").GetComponent<move>();
         identity = m.identity;
         test = GameObject.FindWithTag("Test").GetComponent<Test>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     // Update is called once per frame
     void Update()
@@ -82,12 +86,17 @@ public class ToySpawner : MonoBehaviour
                     b.Spawner();
                     test.toyCorrect = false;
                     test.boxCorrect = false;
+
+                    audioManager.PlaySFX(audioManager.success);
+
                     test.score++;
                     //test.scoreText.text = test.score.ToString();
                 }
             }
             else
             {
+                audioManager.PlaySFX(audioManager.failure);
+
                 Debug.Log("B");
                 Destroy(m.gameObject);
             }

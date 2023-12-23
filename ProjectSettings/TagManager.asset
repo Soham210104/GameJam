@@ -23,6 +23,7 @@ TagManager:
   - Test
   - Toy
   - Score
+  - Audio
   layers:
   - Default
   - TransparentFX

@@ -161,6 +161,9 @@ public class Logic : MonoBehaviour
     public bool f1, f2, f3;
     public bool productAtPickUp;
     public Sprite[] spriteArray;
+
+    private AudioManager audioManager;
+
     //public Vector2 m2pos;
     //moveM1toM2 m1tom2;
     void Start()
@@ -180,6 +183,8 @@ public class Logic : MonoBehaviour
         _mainCamera = Camera.main;
         s = "";
         initSprite = "";
+
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     //     public void moveit()
     //     {
@@ -209,6 +214,8 @@ public class Logic : MonoBehaviour
 
                 f1 = false;
                 f2 = true;
+
+                audioManager.PlaySFX(audioManager.machine1);
                 break;
             case "slot2":
                 if (!f1) break;
@@ -220,6 +227,8 @@ public class Logic : MonoBehaviour
                 initSprite = "Ci";
                 f1 = false;
                 f2 = true;
+
+                audioManager.PlaySFX(audioManager.machine1);
                 break;
             case "slot3":
                 if (!f1) break;
@@ -231,6 +240,8 @@ public class Logic : MonoBehaviour
                 initSprite = "Ca";
                 f1 = false;
                 f2 = true;
+
+                audioManager.PlaySFX(audioManager.machine1);
                 break;
 
                 
@@ -247,6 +258,8 @@ public class Logic : MonoBehaviour
                 s += "Re";
                 f2 = false;
                 f3 = true;
+
+                audioManager.PlaySFX(audioManager.machine2);
                 break;
             case "slot5":
                 if (!f2) break;
@@ -262,6 +275,8 @@ public class Logic : MonoBehaviour
                 s += "Gr";
                 f2 = false;
                 f3 = true;
+
+                audioManager.PlaySFX(audioManager.machine2);
                 break;
             case "slot6":
                 if (!f2) break;
@@ -277,6 +292,8 @@ public class Logic : MonoBehaviour
                 s += "Bl";
                 f2 = false;
                 f3 = true;
+
+                audioManager.PlaySFX(audioManager.machine2);
                 break;
             case "slot7":
                 if (!f3) break;
@@ -304,6 +321,8 @@ public class Logic : MonoBehaviour
                 f3 = false;
                 productAtPickUp = true;
                 //f1 = true;
+
+                audioManager.PlaySFX(audioManager.machine3);
                 break;
             case "slot8":
                 if (!f3) break;
@@ -332,6 +351,8 @@ public class Logic : MonoBehaviour
                 f3 = false;
                 productAtPickUp = true;
                 //f1 = true;
+
+                audioManager.PlaySFX(audioManager.machine3);
                 break;
             case "slot9":
                 if (!f3) break;
@@ -360,6 +381,8 @@ public class Logic : MonoBehaviour
                 f3 = false;
                 productAtPickUp = true;
                 //f1 = true;
+
+                audioManager.PlaySFX(audioManager.machine3);
                 break;
 
         }

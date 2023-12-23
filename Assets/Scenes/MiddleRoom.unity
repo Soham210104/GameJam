@@ -1220,7 +1220,9 @@ MonoBehaviour:
   prefabName: 
   identity: 
   randomBox: {fileID: 0}
+  b: {fileID: 762886924}
   m: {fileID: 0}
+  test: {fileID: 1102924790}
 --- !u!1 &762886922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,6 +1299,8 @@ MonoBehaviour:
   prefabName: 
   randomBox: {fileID: 0}
   identity: 
+  test: {fileID: 1102924790}
+  t: {fileID: 749961063}
   m: {fileID: 0}
 --- !u!1 &767359168
 GameObject:
@@ -1833,8 +1837,8 @@ GameObject:
   - component: {fileID: 1102924791}
   - component: {fileID: 1102924790}
   m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
+  m_Name: Test
+  m_TagString: Test
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1853,6 +1857,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxSpawner: {fileID: 762886922}
   toySpawner: {fileID: 749961061}
+  prefabNameBox: 
+  prefabNameToy: 
+  boxCorrect: 1
+  toyCorrect: 1
 --- !u!4 &1102924791
 Transform:
   m_ObjectHideFlags: 0
@@ -4334,7 +4342,6 @@ MonoBehaviour:
   ProductToy: {fileID: 0}
   bS: {fileID: 762886924}
   tS: {fileID: 749961063}
-  identity: 
   goalBox: 
   goalToy: 
 --- !u!1 &1676479926
@@ -5340,12 +5347,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 2560, y: 1440}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96

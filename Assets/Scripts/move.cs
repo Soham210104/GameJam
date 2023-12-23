@@ -91,3 +91,8 @@ public class move : MonoBehaviour
         else Destroy(gameObject);*/
     }
 }
+
+/*
+ DROP BOX and TOY when its identity correct with goalBox..destroy when wrong
+ SPAWN BOX TOY WHEN both correct is placed.
+ */

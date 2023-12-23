@@ -8,8 +8,14 @@ public class Test : MonoBehaviour
    
         public static Test Instance;
         public GameObject boxSpawner,toySpawner;
+        public string prefabNameBox;
+        public string prefabNameToy;
+        public bool boxCorrect;
+        public bool toyCorrect;
         void Awake()
         {
+            boxCorrect = false;
+            toyCorrect = false;
             if (Instance != null) { Destroy(gameObject); return; } // stops dups running
             DontDestroyOnLoad(gameObject); // keep me forever
             Instance = this; // set the reference to it

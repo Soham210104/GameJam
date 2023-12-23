@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class Test : MonoBehaviour
 {
 
@@ -12,7 +12,10 @@ public class Test : MonoBehaviour
         public string prefabNameToy;
         public bool boxCorrect;
         public bool toyCorrect;
-        void Awake()
+        public TextMeshProUGUI scoreText;
+        public int score = 0;
+    
+    void Awake()
         {
             boxCorrect = false;
             toyCorrect = false;
@@ -20,8 +23,7 @@ public class Test : MonoBehaviour
             DontDestroyOnLoad(gameObject); // keep me forever
             Instance = this; // set the reference to it
             boxSpawner.GetComponent<BoxSpawner>().Spawner();
-            toySpawner.GetComponent<ToySpawner>().SpawnerToy();
-
+            toySpawner.GetComponent<ToySpawner>().SpawnerToy();   
         }
     
 }

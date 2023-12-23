@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class BoxSpawner : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -72,12 +72,13 @@ public class BoxSpawner : MonoBehaviour
                     if (e2 != null)
                     {
                         Destroy(e2);
-
                     }
                     Spawner();
                     t.SpawnerToy();
                     test.boxCorrect = false;
                     test.toyCorrect = false;
+                    test.score++;
+                    //test.scoreText.text = test.score.ToString();
                 }
             }
             else

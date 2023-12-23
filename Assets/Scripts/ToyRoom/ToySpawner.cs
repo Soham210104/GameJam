@@ -82,6 +82,8 @@ public class ToySpawner : MonoBehaviour
                     b.Spawner();
                     test.toyCorrect = false;
                     test.boxCorrect = false;
+                    test.score++;
+                    //test.scoreText.text = test.score.ToString();
                 }
             }
             else

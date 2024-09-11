@@ -37,6 +37,6 @@ GameDevelopment, C#, Unity Engine
 
 ## 🔗 Links
 
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/posts/soham-ovhal-406187142_gamedevelopment-programming-unitydeveloper-activity-7041888248171814912-a9uW?utm_source=share&utm_medium=member_desktop)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/posts/soham-ovhal-pccoe_hello-connections-we-took-part-in-a-game-activity-7144409780835581952-xJC0?utm_source=share&utm_medium=member_desktop)
 
 

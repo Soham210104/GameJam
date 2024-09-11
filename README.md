@@ -2,7 +2,7 @@
 https://github.com/Soham210104/GameJam/assets/70838687/2c325e2c-a4bf-4c95-a134-f0bbbc4ea4d7
 
 ## Game Link
-https://itch.io/jam/festive-jam-2023/rate/2438553
+[https://itch.io/jam/festive-jam-2023/rate/2438553](https://spdsahil.itch.io/merry-maker-madness)
 
 # MerryMakerMadness
 We took part in a game jam called FestiveJam on itch.io, where the theme centered around "Santa's Little Helper" and we had to make that game in 7days. Our collaborative effort resulted in the creation of a 2D pixel game for Windows with the help of Unity Engine named Merry Maker Madness. The objective of the game is to craft gifts for children, with specific instructions on box and toy types displayed in the common room.
